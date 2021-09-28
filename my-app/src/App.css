@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: lightgray;
 }
 
 .App-header {
@@ -10,6 +11,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card {
@@ -29,12 +36,20 @@
 .followers {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .follower {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
+  width: 35%;
+}
+
+.follower-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
